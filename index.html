@@ -4,58 +4,84 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/styles.css" />
         <title>Jogo da memória</title>
     </head>
     <body>
-        <div class="container">
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
+        <div class="score-container">
+            <div class="tries-wrapper">
+                <h1>Tentativas:&nbsp</h1>
+                <h1 id="tries">0</h1>
             </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
-            </div>
-            <div class="card">
-                <img src="" alt="frente da carta" class="card-front" />
-                <img src="" alt="verso da carta" class="card-back" />
+            <div class="hits-wrapper">
+                <h1>Acertos:&nbsp</h1>
+                <h1 id="hits">0</h1>
             </div>
         </div>
+        <div class="board-container">
+            <div class="board-wrapper">
+                <div class="card" data-card="pikachu">
+                    <img src="./assets/imgs/pikachu.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="squirtle">
+                    <img src="./assets/imgs/squirtle.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="charmander">
+                    <img src="./assets/imgs/charmander.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="bulbassaur">
+                    <img src="./assets/imgs/bulbassaur.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="abra">
+                    <img src="./assets/imgs/abra.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="gastly">
+                    <img src="./assets/imgs/gastly.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="pikachu">
+                    <img src="./assets/imgs/pikachu.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="squirtle">
+                    <img src="./assets/imgs/squirtle.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="charmander">
+                    <img src="./assets/imgs/charmander.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="bulbassaur">
+                    <img src="./assets/imgs/bulbassaur.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="abra">
+                    <img src="./assets/imgs/abra.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+                <div class="card" data-card="gastly">
+                    <img src="./assets/imgs/gastly.png" alt="frente da carta" class="card-front" />
+                    <img src="./assets/imgs/back.png" alt="verso da carta" class="card-back" />
+                </div>
+            </div>
+        </div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <script src="./assets/scripts.js"></script>
     </body>
 </html>
